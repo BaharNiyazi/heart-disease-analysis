@@ -28,7 +28,7 @@ The goal of this project is to explore a medical dataset of 918 patients and ans
 
 > **Which patient characteristics are most associated with heart disease?**
 
-The analysis covers data quality checks, cleaning of impossible values, and three groups of visualizations (categorical bar plots, age and sex comparison, and a correlation heatmap), followed by conclusions.
+The analysis covers data quality checks, cleaning of impossible values, and visualizations (categorical bar plots, age and sex comparison, and a correlation heatmap), followed by conclusions.
 
 ## Dataset
 
@@ -131,35 +131,43 @@ Higher `Oldpeak` and lower `MaxHR` are the strongest numeric signals, while `Cho
 
 ## Project Structure
 
-```
+```text
 heart-disease-analysis/
-├── data/
-│   └── heart.csv                  # dataset
-├── images/                        # saved plots used in this README
-│   ├── categorical_barplots.png
-│   ├── age_barplot.png
-│   ├── sex_barplot.png
-│   └── correlation_heatmap.png
-├── analysis.ipynb                 # full analysis notebook
-└── README.md
+|-- data/
+|   |-- heart.csv                  (dataset)
+|-- images/                        (saved plots used in this README)
+|   |-- categorical_barplots.png
+|   |-- age_barplot.png
+|   |-- sex_barplot.png
+|   |-- correlation_heatmap.png
+|-- analysis.ipynb                 (full analysis notebook)
+|-- README.md
 ```
 
 ## How to Run
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/heart-disease-analysis.git
-   cd heart-disease-analysis
-   ```
-2. Install the required libraries:
-   ```bash
-   pip install numpy pandas matplotlib seaborn jupyterlab
-   ```
-3. Launch JupyterLab and open the notebook:
-   ```bash
-   jupyter lab
-   ```
-4. Open `analysis.ipynb` and run all cells (**Kernel → Restart Kernel and Run All Cells**).
+### Step 1: Clone the repository
+
+```bash
+git clone https://github.com/BaharNiyazi/heart-disease-analysis.git
+cd heart-disease-analysis
+```
+
+### Step 2: Install the required libraries
+
+```bash
+pip install numpy pandas matplotlib seaborn jupyterlab
+```
+
+### Step 3: Launch JupyterLab
+
+```bash
+jupyter lab
+```
+
+### Step 4: Run the notebook
+
+Open `analysis.ipynb` and run all cells (**Kernel → Restart Kernel and Run All Cells**).
 
 ## Tools
 
